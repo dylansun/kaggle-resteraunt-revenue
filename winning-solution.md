@@ -1,9 +1,10 @@
+Repost from the kaggle resteraunt revenue prediction competition. This experience is shared by Arsenal.
 #### 1) Feature Engineering
 * i) Square root transformation was applied to the obfuscated P variables with maximum value >= 10, to make them into the same scale, as well as the target variable “revenue”.
 
 * ii) Random assignments of uncommon city levels to the common city levels in both training and test set, which I believe, diversified the geo location information contained in the city variable and in some of the obfuscated P variables.
 
-Note: I discovered this to be helpful by chance. My intention was to assign uncommon city levels to their nearest common city levels. But it read the city levels differently on my laptop and on the server. It performed significantly better on the server. I am not 100% sure, but my explanation were given above.
+**Note**: I discovered this to be helpful by chance. My intention was to assign uncommon city levels to their nearest common city levels. But it read the city levels differently on my laptop and on the server. It performed significantly better on the server. I am not 100% sure, but my explanation were given above.
 
 * iii) Missing value indicator for multiple P variables, i.e. P14 to P18, P24 to P27, and P30 to P37 was created to help differentiate synthetic and real test data.
 
